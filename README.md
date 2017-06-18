@@ -31,8 +31,11 @@ To build and run individual docker image for application (not including dependen
 However, please use docker-compose to run all dependencies using their own containers
 
   $ docker-compose up 
+  $ docker-compose run web rake db:create
 
-First time you run all images are built, following times you need to explicitly request them to be built
+Once running you can access the application via localhost:5002
+
+NOTE: First time you run all images are built, following times you need to explicitly request them to be built
 
 Use `docker-compose build` or `docker-compose up --build`
 

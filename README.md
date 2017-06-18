@@ -25,13 +25,13 @@ Dev Environment is generated using docker:
 
 To build and run individual docker image for application (not including dependencies)
 
-  $ docker build -t wakutasks .
-  $ docker run -p -v <fully_qualified_path_to>/wakutasks:/usr/src/app <host_port>:3000 wakutasks
+  * `$ docker build -t wakutasks .`
+  * `$ docker run -p -v <fully_qualified_path_to>/wakutasks:/usr/src/app <host_port>:3000 wakutasks`
 
 However, please use docker-compose to run all dependencies using their own containers
 
-  $ docker-compose up 
-  $ docker-compose run web rake db:create
+  * `$ docker-compose up`
+  * `$ docker-compose run web rake db:create`
 
 Once running you can access the application via localhost:5002
 

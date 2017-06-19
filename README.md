@@ -3,7 +3,7 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-![Screenshot](screenshot.png)
+![Screenshot](wakutasks.png)
 
 Things you may want to cover:
 

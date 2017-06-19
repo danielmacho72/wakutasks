@@ -39,4 +39,24 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Action Mailer
+  #config.action_mailer.perform_deliveries = true
+
+  #config.action_mailer.delivery_method = :smtp
+
+  #config.action_mailer.default_url_options = {
+  #    host: ENV["MAIL_LINK_HOST"],
+  #    protocol: (ENV["MAIL_LINK_PROTO"] || "https")
+  #}
+
+  #smtp_env = Hash[ENV.map do |k,v|
+  #                  if /^SMTP_(.*)$/ === k
+  #                    [$1.downcase.to_sym, YAML.load(v)]
+  #                  end
+  #                end.compact]
+
+  #if smtp_env.present?
+  #  config.action_mailer.smtp_settings = smtp_env
+  #end
 end
